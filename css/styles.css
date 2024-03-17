@@ -170,8 +170,7 @@
     width: 1440px;
     height: 600px;
     margin: 0 auto;
-   
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./.images/people-office.png");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.png");
     background-size: cover;
     background-position: center;
     cursor: pointer;   
@@ -210,9 +209,9 @@
 }
 
 .is-hidden {
-  visibility: hidden;
-  opacity: 0.7;
- transform: scale(1.1);
+    visibility: hidden;
+    opacity: 0.7;
+    transform: scale(1.1);
   
 }
 
@@ -225,8 +224,7 @@
         display: flex; 
         justify-content: center;
         align-content: center; 
-        transition: transform var(--transition);
-      
+        transition: transform var(--transition);     
 }
 
 .modal-content {  
