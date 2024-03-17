@@ -13,7 +13,8 @@
         --ocean: #404BBF;
         --laight-slate: #8E8F99;
         --gray: #2E2F42B2;
-        --dairy: #FCFCFC;
+        --dairy: rgba(252, 252, 252, 1);
+        --background-hero:background: rgba(46, 47, 66, 0.7);
         --navy-blue-modal-background: #2E2F4266;
     --transition:cubic-bezier(0.4, 0, 0.2, 1);
     --transition-modal:250ms cubic-bezier( 0.4,0, 0.2,1);
@@ -169,8 +170,8 @@
     width: 1440px;
     height: 600px;
     margin: 0 auto;
-    background-color: var(--gray);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/people-office.png");
+   
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/.images/people-office.png");
     background-size: cover;
     background-position: center;
     cursor: pointer;   
@@ -210,7 +211,9 @@
 
 .is-hidden {
   visibility: hidden;
-  transform: scale(1.1);
+  opacity: 0.7;
+ transform: scale(1.1);
+  
 }
 
 .modal {
@@ -223,7 +226,7 @@
         justify-content: center;
         align-content: center; 
         transition: transform var(--transition);
-        background-color: #2c272775;
+      
 }
 
 .modal-content {  
@@ -232,11 +235,12 @@
    height: 584px ;
    top: 140px;
    border:1px solid var(--dairy);
-   border-radius: 4px;
+   border-radius: 1px;
    box-shadow: 0px 2px 1px 0px #00000033;
    box-shadow: 0px 1px 3px 0px #0000001F;
    box-shadow: 0px 1px 1px 0px #00000024;
    position: relative; 
+ 
   
 }
 
@@ -247,9 +251,10 @@
     outline: none;
     position: absolute;
     top: 24px;
-    right: 24px;
+    right: 24px;  
     border: 1px solid #0000001A;
 }
+
 
 .one-section {
     display: flex;
